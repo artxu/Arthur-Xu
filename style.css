@@ -1,0 +1,92 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  font-family: "Roboto", serif;
+  background-color: #fff;
+}
+
+#landing-left{
+  width: 25vw;
+  height: 100vh;
+  position: fixed;
+  float: left;
+  background-color: #ccc;
+}
+#landing-right{
+  width: 75vw;
+  float: right;
+  background-color: #444;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#logo{
+  margin-top: 2vh;
+  font-size: 12vh;
+  height: 16vh;
+  text-align: center;
+  font-weight: 100;
+  color: #444;
+}
+#photo{
+  background-color: #fff;
+  height: 85vh;
+}
+
+#navbar{
+  padding-top: 3vh;
+  height: 5vh;
+  background-color: #444;
+  color: #fff;
+  font-size: 2vh;
+  padding-left: 5vw;
+}
+
+.article{
+  transition: all 0.4s ease;
+}
+.article-date{
+  font-size: 2vh;
+  font-weight: 400;
+  color: #888;
+  pointer-events: none;
+}
+.article-title{
+  padding-top: 3vh;
+  height: 11vh;
+  padding-left: 5vw;
+  font-size: 4vh;
+  font-weight: 300;
+  color: #444;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+.article{
+  background-color: #eee;
+}
+.article:nth-child(even){
+  background-color: #ddd;
+}
+.article-title:hover{
+  background-color: #bbb;
+}
+.expanded .article-title:hover{
+  background-color: inherit !important;
+  transition: background-color 0s linear !important;
+}
+
+.article-text{
+  overflow-y: scroll;
+  height: 0px;
+  padding: 0px 5vw;
+  transition: all 0.4s ease;
+  font-weight: 300;
+  font-size: 3vh;
+  line-height: 4vh;
+  color: #444;
+}
+.expanded .article-text{
+  height: 100vh;
+  padding: 0px 5vw 5vh 5vw;
+}
